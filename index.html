@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries and States of the World</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+</head>
+<body class="bg-gradient-to-r from-green-700 via-green-500 to-green-400 overflow-x-hidden">
+    <h1 class="text-white text-center mt-4 text-5xl font-extrabold">Countries and States of the World</h1>
+    <h2 class="text-white text-center mt-2 text-2xl font-semibold">Search for any country or state in the world and get its details!</h2>
+    <form class="flex flex-col w-1/4 mx-auto mt-12">
+        <div class="bg-gray-300 p-2 rounded">
+          <input type="text" class="bg-gray-100 text-xl shadow appearance-none border-none rounded w-full py-5 px-5 focus:outline-none focus:bg-white" placeholder="Enter Country or State">
+        </div>
+       <ul class="suggestions">
+           <li class="text-center w-full py-3 mx-auto bg-gray-200 shadow capitalize text-base rounded-sm font-light">Filter for a country</li>
+           <li class="text-center w-full py-3 mx-auto bg-gray-200 shadow capitalize text-base rounded-sm font-light">or a state</li>
+       </ul>
+    </form>
+
+    <div class="output"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
